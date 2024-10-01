@@ -6,7 +6,7 @@ import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
   {
-    title: "Features",
+    title: "Novedades",
     path: "#",
     children: [
       { title: "Action", path: "/" },
@@ -16,11 +16,7 @@ const menuitems = [
     ],
   },
   {
-    title: "Pricing",
-    path: "/pricing",
-  },
-  {
-    title: "About",
+    title: "Conocenos",
     path: "/about",
   },
   {
@@ -28,13 +24,8 @@ const menuitems = [
     path: "/blog",
   },
   {
-    title: "Contact",
+    title: "Contacto",
     path: "/contact",
-  },
-  {
-    title: "Pro Version",
-    badge: true,
-    path: "https://astroship-pro.web3templates.com/",
   },
 ];
 ---
@@ -44,8 +35,8 @@ const menuitems = [
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
         <a href="/" class="text-lg"
-          ><span class="font-bold text-slate-800">Astro</span><span
-            class="text-slate-500">ship</span
+          ><span class="font-bold text-slate-800">Khimich</span><span
+            class="text-slate-500">Store</span
           >
         </a>
         <div class="block lg:hidden">
@@ -90,10 +81,10 @@ const menuitems = [
       </MenuItems>
     </Astronav>
     <div>
-      <div class="hidden lg:flex items-center gap-4">
+      <!--<div class="hidden lg:flex items-center gap-4">
         <a href="#">Log in</a>
         <Link href="#" size="md">Sign up</Link>
       </div>
-    </div>
+    </div>-->
   </header>
 </Container>
