@@ -21,8 +21,8 @@ const resolvedImageWithDomain = new URL(
 const { title } = Astro.props;
 
 const makeTitle = title
-  ? title + " | " + "Astroship"
-  : "Astroship - Starter Template for Astro with Tailwind CSS";
+  ? title + " | " + "Monteria"
+  : "Calidad y estilo al mejor precio";
 ---
 
 <!DOCTYPE html>
@@ -30,7 +30,7 @@ const makeTitle = title
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
 
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
@@ -47,16 +47,16 @@ const makeTitle = title
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Astroship - Starter Template for Astro`,
+          title: `Calidad y estilo al mejor precio`,
           image: resolvedImageWithDomain,
         },
         image: {
-          alt: "Astroship Homepage Screenshot",
+          alt: "Calidad y estilo al mejor precio",
         },
       }}
     />
   </head>
-  <body>
+  <body class="bg-gradient-pink-white">
     <Navbar />
     <slot />
     <Footer />
